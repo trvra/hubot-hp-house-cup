@@ -1,0 +1,39 @@
+{
+  "name": "hubot-hp-house-cup",
+  "description": "A hubot script for keeping track of House Cup Points",
+  "version": "0.0.0",
+  "author": "Trevor Adams <trevor.s.adams@gmail.com>",
+  "license": "MIT",
+
+  "keywords": ["hubot","hubot-scripts"],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-hp-house-cup.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-hp-house-cup/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "grunt test"
+  }
+}
