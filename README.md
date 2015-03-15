@@ -27,3 +27,9 @@ hubot>> Slytherin now has -10 points!
 
 ## This is completely broken
 It might be! I'm so sorry! Would you please log an issue here on Github so this module can be improved?
+
+## Roadmap
+- Yo: most of the code in this repo is stubbed out from yeoman, but I want to take a pass and ensure that it is as local organic artisanal as I want it to be
+- Actual tests: should be able to make changes, run tests, and feel confident in pushing new versions
+- More complex Regex: this module should capture more natural language forms of adding and removing points
+- Reasons: this module should be able to store and retrieve reasons for why points were added and removed
