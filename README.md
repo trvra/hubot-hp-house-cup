@@ -24,3 +24,6 @@ hubot>> Ravenclaw now has 20 points!
 user1>> hubot -10 Slytherin
 hubot>> Slytherin now has -10 points!
 ```
+
+## This is completely broken
+It might be! I'm so sorry! Would you please log an issue here on Github so this module can be improved?
