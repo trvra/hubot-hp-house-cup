@@ -51,9 +51,10 @@ module.exports = (robot) ->
       points *= operator
       points += robot.brain.get(house) or 0
       plural = if points is 1 then "" else "s"
+      has = if house is "muggles" then " have " else " has "
       robot.brain.set(house, points)
       msg.send house[0].toUpperCase() + house.slice(1) +
-        " now has " + points + " point" + plural + "!"
+        " now" + has + points + " point" + plural + "!"
     else
       msg.send "Magic isn't real, that didn't work."
 
