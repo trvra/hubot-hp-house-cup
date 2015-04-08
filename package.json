@@ -1,7 +1,7 @@
 {
   "name": "hubot-hp-house-cup",
   "description": "A hubot script for keeping track of House Cup Points",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Trevor Adams <trevor.s.adams@gmail.com>",
   "license": "MIT",
 
