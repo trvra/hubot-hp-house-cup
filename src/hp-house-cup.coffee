@@ -36,13 +36,13 @@
 module.exports = (robot) ->
 
   robot.respond /(take)?.*?(\-|\+)?(\d+)(?:(?!from).)*(from)?.*(gryffindor|hufflepuff|muggles|ravenclaw|slytherin)/i, (msg) ->
-    tg = msg.match[1]                   # "give" or "take" or ""
+    take = msg.match[1]                 # take" or ""
     operator = msg.match[2]             # "+" or "-" or ""
     points = parseInt(msg.match[3])     # number of points to change
-    tf = msg.match[4]                   # "take" or "from" or ""
+    from = msg.match[4]                 # "from" or ""
     house = msg.match[5].toLowerCase()  # house to change points of
 
-    if tg is "take" or operator is "-" or tf is "from"
+    if take or operator is "-" or from
       operator = -1
     else
       operator = 1
@@ -51,10 +51,10 @@ module.exports = (robot) ->
       points *= operator
       points += robot.brain.get(house) or 0
       plural = if points is 1 then "" else "s"
+      properHouse = house[0].toUpperCase() + house.slice(1)
       has = if house is "muggles" then " have " else " has "
       robot.brain.set(house, points)
-      msg.send house[0].toUpperCase() + house.slice(1) +
-        " now" + has + points + " point" + plural + "!"
+      msg.send properHouse + " now" + has + points + " point" + plural + "!"
     else
       msg.send "Magic isn't real, that didn't work."
 
