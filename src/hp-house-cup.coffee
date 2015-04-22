@@ -8,9 +8,9 @@
 #   None
 #
 # Commands:
-#   hubot give +<x> points to <house> - add x points to house
-#   hubot take -<x> points from house - subtract x points from house
-#   hubot hosue cup standings - print current points stored
+#   hubot give +<x> points to <house> - add x points to hogwarts house
+#   hubot take -<x> points from <house> - subtract x points from hogwarts house
+#   hubot house cup standings - print current points stored
 #
 # Examples:
 #   hubot give 20 points to Ravenclaw
